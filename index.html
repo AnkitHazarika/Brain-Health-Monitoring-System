@@ -1,13 +1,879 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+      .corefeaturesection{
+        background-size: 100% 100%;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+      }
+
+      .list3{
+        animation:10s infinite linear moveImage;
+      }
+      @keyframes moveImage{
+         0%{
+          top:0;
+         }
+         100%{
+          top:-50%;
+         }
+      }
+    </style>
+
+</head>
+<body>
+  <div class="overflow-x-hidden relative w-full">
+    <!--Navbar-->
+    <nav class="bg-deepBlue">
+        <div class="relative w-[1090px] mx-auto flex items-center justify-between">
+
+            <!-- logo -->
+             <!-- <a href="" class="cursor-pointer py-7 pr-7"> -->
+                <img 
+                src="image/icon.png"
+                width="60px"
+                height="15px">
+             </a>
+
+            <ul class="flex gap-6">
+             <li class="text-white font-diplay py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group">
+            <a href="#">Platform</a>
+
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200" ></div>
+             </li>
+
+             <li class="text-white font-diplay py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group">
+            <a href="#">Use Cases</a>
+
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200" ></div>
+             </li>
+
+             <li class="text-white font-diplay py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group">
+            <a href="#">Learn</a>
+
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200 " ></div>
+             </li>
+
+             <li class="text-white font-diplay py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group">
+            <a href="#">About</a>
+
+           
+             </li>
+
+             <!-- <li class="text-white font-diplay py-7 hover:text-lightBlue 
+            transition-all duration-200 relative group ">
+            <a href="#">Resources</a>
+
+           
+             </li> -->
+
+             <li class="text-white font-diplay py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group">
+            <a href="#">Resources</a>
+
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200" ></div>
+             </li>
+
+             <li class="text-white font-diplay py-7 hover:text-lightBlue cursor-pointer
+            transition-all duration-200 relative group">
+            <a href="#">Support</a>
+
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200" ></div>
+             </li>
+
+             <!-- <li class="text-white font-diplay py-7 cursor-pointer hover:text-lightBlue 
+            transition-all duration-200 relative group">
+            <a href="#">Pricing</a>
+
+            <div class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200" ></div>
+            </li> -->
+             </ul>
+
+             <div class="flex space-x-6">
+                
+             <img src="image/indianFlag.png"
+             width="60px"
+             height="15px"
+             />
+
+             <button class="py-3 px-5 font-diplay text-white border-lightBlue border rounded-sm text-sm font-bold cursor-pointer">Log in</button>
+             <button class="py-3 px-4 font-diplay rounded-sm text-sm font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500 cursor-pointer">Sign Up</button>
+             </div>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section class="relative bg-deepBlue mx-auto ">
+        <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto">
+            <!--left part-->
+            <div class="space-y-8">
+                <h1 class="font-diplay font-bold text-[40px] leading-[1.2] text-white mt-15">Brain Health Monitoring System</h1>
+                <div class="w-6 h-1 bg-green-400"></div>
+                <p class="font-diplay text-[18px] leading-7 opacity-70 text-white">Our Brain Health Monitoring System is designed to track neurological signals, cognitive performance, and behavioral patterns. Using AI-driven analytics, we help detect early warning signs of conditions like stroke, Alzheimer’s, or stress-related disorders — empowering you and your doctors with actionable insights.</p>
+
+                  <ul class=" text-[18px] leading-7 opacity-70 text-white">
+                    <li class="font-diplay flex items-center space-x-2">
+                      <i data-feather="check" class="text-green-300"></i>
+                     <span> Continuous Monitoring – Track brain activity in real time.</span>
+                       
+                    </li>
+
+<li class="font-diplay flex items-center space-x-2"> 
+   <i data-feather="check" class="text-green-300"></i>
+   <span>Smart Analytics – AI-based insights for early detection. </span></li>
+
+<li class="font-diplay flex items-center space-x-2">
+  <i data-feather="check" class="text-green-300"></i>
+ <span>Personalized Dashboard – Easy-to-read health reports.</span> </li>
+
+<li class="font-diplay flex items-center space-x-2">
+  <i data-feather="check" class="text-green-300"></i>
+ <span> Secure & Private – HIPAA-compliant, data encrypted.</span> </li>
+                  </ul>
+                
+                <button
+                class="bg-lightBlue text-white py-[14px] px-[11px] rounded-md font-diplay font-bold
+                hover:bg-lightBlue500 transition-all duration-200 cursor-pointer">Sign Up Now</button>
+            </div>
+            <!--right part-->
+            <img src="image/brain3.png" alt="" 
+            class="max-w-[612px] h-[344px] ml-" >
+        </div>
+
+        <!--shape part-->
+        <div class="absolute left-0 right-0 w-full ">
+            <img src="image/footer.png" alt=""
+            class="relative w-full object-fill scale-x-100">
+        </div>
+
+    </section>
+
+    <!-- feature section -->
+     <section class="relative mt-[190px]" >
+        <img src="image/grid.png" alt="" loading="lazy"
+        width="233"
+        height="167"
+      
+        class="absolute z-2 rotate-1 -top-[rem] left-[10rem] inline-block ">
+
+        <img src="image/grid.png" alt="" loading="lazy"
+        width="233"
+        height="167"
+        class="absolute top-[3rem] right-0 inline-block">
+
+        <div class="z-3 relative w-11/12 max-w-[1080px] mx-auto pt-4">
+            <!-- heading -->
+             <h2 class="font-diplay text-center text-2xl leading-[1.2] font-extrabold">Services / Features</h2>
+             <div class="bg-green-300 mx-auto w-6 h-1 mt-4 mb-6"></div>
+
+             <!-- content-box -->
+              <div class="w-full min-h-[520px] bg-white flex rounded-md relative p-10 py-12 border">
+                <!-- left section -->
+              <div class="flex flex-col justify-between w-full">
+              <h3 class="font-diplay text-[28px] leading-10 font-bold max-w-[500px]">Lorem ipsum dolor. 
+                <span class="text-lightBlue">Lorem ipsum dolor sit amet deserunt! Suscipit provident.Payment gateway</span>
+              </h3>
+              <ul class="space-y-2">
+              <li class="font-diplay flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>1st</span>
+              </li>
+              <li class="font-diplay flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>2nd</span>
+              </li>
+              <li class="font-diplay flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>3rd</span>
+              </li>
+              <li class="font-diplay flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>4th</span>
+              </li>
+              <li class="font-diplay flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>5th</span>
+              </li>
+              </ul>
+
+              <!-- for button and hyperlink -->
+            <div class="flex flex-row items-center space-x-4">
+                <button
+                class="bg-lightBlue w-fit text-white py-[14px] px-[18px] rounded-md
+                font-diplay font-bold hover:bg-lightBlue transition-all duration-200 cursor-pointer">Sign Up Now</button>
+
+                <!-- hyperlink -->
+                 <div class="flex items-center cursor-pointer group">
+                    <a href="#"
+                    class="font-diplay font-bold text-lightBlue500
+                    group-hover:text-grayBlue transition-all duration-200">Know More</a>
+                    <i
+                    data-feather="chevron-right"
+                    class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+                 </div>
+
+            </div>
+
+        </div>
+        <img src="image/bg.png"
+        class="absolute max-w-[900px] right-0 bottom-20 ">
+</div>
+
+<!-- grid -->
+<div class="w-full grid grid-cols-3 gap-4 mt-20">
+
+<!-- box1 -->
+  <div class="w-full min-h-[15rem] relative cursor-pointer
+  hover:scale-105 transition-all duration-200">
+    <img src="image/arrow2.png"
+      class="bg-lightBlue absolute right-3 top-3 w-12 h-12 z-[8] transition-all duration-200">
+
+    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#018597] h-full w-full absolute z-[90] featureCardSVG" style="stroke-opacity: 0.15">
+                        <path d="m 0 6 a 6 6 0 0 1 6 -6 h 250.32501220703125 a 16 16 0 0 1 11 5 l 77 77 a 16 16 0 0 1 5 11 v 126 a 6 6 0 0 1 -6 6 h -337.32501220703125 a 6 6 0 0 1 -6 -6 z" fill="#fff"></path>
+                    </svg>
+
+    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+      <div>
+        <h3 class="font-diplay font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Links</h3>
+        <p class="font-diplay text-grayText mt-6">Lorem, ipsum. Lorem, ipsum dolor.</p>
+      </div>
+      <div class="flex items-center cursor-pointer group">
+        <a href="#"
+          class="font-diplay font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know
+          More</a>
+        <i data-feather="chevron-right"
+          class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+      </div>
+    </div>
+  </div>
+<!-- box2 -->
+  <div class="w-full min-h-[15rem] relative cursor-pointer
+  hover:scale-105 transition-all duration-200">
+    <img src="image/arrow.png"
+      class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+
+    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#018597] h-full w-full absolute z-[90] featureCardSVG" style="stroke-opacity: 0.15">
+                        <path d="m 0 6 a 6 6 0 0 1 6 -6 h 250.32501220703125 a 16 16 0 0 1 11 5 l 77 77 a 16 16 0 0 1 5 11 v 126 a 6 6 0 0 1 -6 6 h -337.32501220703125 a 6 6 0 0 1 -6 -6 z" fill="#fff"></path>
+                    </svg>
+
+    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+      <div>
+        <h3 class="font-diplay font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Links</h3>
+        <p class="font-diplay text-grayText mt-6">Lorem, ipsum. Lorem, ipsum dolor.</p>
+      </div>
+      <div class="flex items-center cursor-pointer group">
+        <a href="#"
+          class="font-diplay font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know
+          More</a>
+        <i data-feather="chevron-right"
+          class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- box3 -->
+  <div class="w-full min-h-[15rem] relative cursor-pointer
+  hover:scale-105 transition-all duration-200">
+    <img src="image/arrow2.png"
+      class="bg-lightBlue absolute right-3 top-3 w-12 h-12 z-[8] transition-all duration-200">
+
+    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#018597] h-full w-full absolute z-[90] featureCardSVG" style="stroke-opacity: 0.15">
+                        <path d="m 0 6 a 6 6 0 0 1 6 -6 h 250.32501220703125 a 16 16 0 0 1 11 5 l 77 77 a 16 16 0 0 1 5 11 v 126 a 6 6 0 0 1 -6 6 h -337.32501220703125 a 6 6 0 0 1 -6 -6 z" fill="#fff"></path>
+                    </svg>
+
+    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+      <div>
+        <h3 class="font-diplay font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Links</h3>
+        <p class="font-diplay text-grayText mt-6">Lorem, ipsum. Lorem, ipsum dolor.</p>
+      </div>
+      <div class="flex items-center cursor-pointer group">
+        <a href="#"
+          class="font-diplay font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know
+          More</a>
+        <i data-feather="chevron-right"
+          class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+      </div>
+    </div>
+  </div>
+<!-- box4 -->
+  <div class="w-full min-h-[15rem] relative cursor-pointer
+  hover:scale-105 transition-all duration-200">
+    <img src="image/arrow.png"
+      class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+
+    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      class="stroke-1 stroke-[#018597] h-full w-full absolute z-[90] featureCardSVG"
+      style="stroke-opacity: 0.15">
+      <path
+        d="m 0 6
+           a 6 6 0 0 1 6 -6
+           h 250.32501220703125
+           a 16 16 0 0 1 11 5
+           l 77 77
+           a 16 16 0 0 1 5 11
+           v 126
+           a 6 6 0 0 1 -6 6
+           h -337.32501220703125
+           a 6 6 0 0 1 -6 -6
+           z"
+        fill="#fff"></path>
+    </svg>
+
+    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+      <div>
+        <h3 class="font-diplay font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Links</h3>
+        <p class="font-diplay text-grayText mt-6">Lorem, ipsum. Lorem, ipsum dolor.</p>
+      </div>
+      <div class="flex items-center cursor-pointer group">
+        <a href="#"
+          class="font-diplay font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know
+          More</a>
+        <i data-feather="chevron-right"
+          class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- box5 -->
+  <div class="w-full min-h-[15rem] relative cursor-pointer
+  hover:scale-105 transition-all duration-200">
+    <img src="image/arrow2.png"
+      class="bg-lightBlue absolute right-3 top-3 w-12 h-12 z-[8] transition-all duration-200">
+
+    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      class="stroke-1 stroke-[#018597] h-full w-full absolute z-[90] featureCardSVG"
+      style="stroke-opacity: 0.15">
+      <path
+        d="m 0 6
+           a 6 6 0 0 1 6 -6
+           h 250.32501220703125
+           a 16 16 0 0 1 11 5
+           l 77 77
+           a 16 16 0 0 1 5 11
+           v 126
+           a 6 6 0 0 1 -6 6
+           h -337.32501220703125
+           a 6 6 0 0 1 -6 -6
+           z"
+        fill="#fff"></path>
+    </svg>
+
+    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+      <div>
+        <h3 class="font-diplay font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Links</h3>
+        <p class="font-diplay text-grayText mt-6">Lorem, ipsum. Lorem, ipsum dolor.</p>
+      </div>
+      <div class="flex items-center cursor-pointer group">
+        <a href="#"
+          class="font-diplay font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know
+          More</a>
+        <i data-feather="chevron-right"
+          class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+      </div>
+    </div>
+  </div>
+
+<!-- box6 -->
+  <div class="w-full min-h-[15rem] relative cursor-pointer
+  hover:scale-105 transition-all duration-200">
+    <img src="image/arrow.png"
+      class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+
+    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      class="stroke-1 stroke-[#018597] h-full w-full absolute z-[90] featureCardSVG"
+      style="stroke-opacity: 0.15">
+      <path
+        d="m 0 6
+           a 6 6 0 0 1 6 -6
+           h 250.32501220703125
+           a 16 16 0 0 1 11 5
+           l 77 77
+           a 16 16 0 0 1 5 11
+           v 126
+           a 6 6 0 0 1 -6 6
+           h -337.32501220703125
+           a 6 6 0 0 1 -6 -6
+           z"
+        fill="#fff"></path>
+    </svg>
+
+    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+      <div>
+        <h3 class="font-diplay font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Links</h3>
+        <p class="font-diplay text-grayText mt-6">Lorem, ipsum. Lorem, ipsum dolor.</p>
+      </div>
+      <div class="flex items-center cursor-pointer group">
+        <a href="#"
+          class="font-diplay font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know
+          More</a>
+        <i data-feather="chevron-right"
+          class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+     
+     <!-- feature section - 2 -->
+    
+     <section 
+     class="bg-[#181c2e] bg-no-repeat bg-cover mt-14 pt-20 overflow-x-hidden">
+     <!-- mx-auto for center -->
+     
+<div class=" w-10/12 max-w-[1080px] mx-auto relative">
+
+  <h2 class="font-bold text-center text-2xl font-display leading-[1.2] text-white">Explore our website</h2>
+  <div class="bg-green-500 h-1 w-6 mx-auto mt-4 mb-6"></div>
+
+
+  <!-- main feature box -->
+  <div class="flex flex-col w-full min-h[440px] relative">
+    <!-- <img src="" alt="flame-1"
+    loading="lazy"
+    class="absolute -top-[142px] -left-[140px] w-[200px]">
+    
+    <img src="" alt="flame-2"
+    loading="lazy"
+    class="absolute -top-[142px] -right-[140px] w-[200px]"> -->
+
+   
+     <!-- content-box -->
+              <div class="w-full min-h-[520px] bg-[#181c2e] border-slate-700 z-20 flex rounded-md relative px-10 py-12 border">
+                <!-- left section -->
+              <div class="flex flex-col justify-between w-full">
+              <h3 class="text-white font-display text-[28px] leading-10 font-bold max-w-[500px]">Lorem ipsum dolor. 
+                <span class="text-lightBlue">Lorem ipsum dolor sit amet deserunt! Suscipit provident.Payment gateway</span>
+              </h3>
+              <ul class="space-y-2">
+              <li class="text-white font-display flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>Lorem ipsum dolor sit.</span>
+              </li>
+              <li class="text-white font-display flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>Lorem ipsum dolor sit.</span>
+              </li>
+              <li class="text-white font-display flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>Lorem ipsum dolor sit.</span>
+              </li>
+              <li class="text-white font-display flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>Lorem ipsum dolor sit.</span>
+              </li>
+              <li class="text-white font-display flex items-center space-x-2">
+                <i data-feather="check" class="text-green-300"></i>
+                <span>Lorem ipsum dolor sit.</span>
+              </li>
+              </ul>
+
+              <!-- for button and hyperlink -->
+            <div class="flex flex-row items-center space-x-4">
+                <button
+                class="relative bg-lightBlue flex items-center justify-start
+                text-white py-[14px] px-[18px] md:pr-[90px] rounded-md
+                font-display font-bold hover:bg-lightBlue500 transition-all duration-200 cursor-pointer">Sign Up Now
+              <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex justify-center items-center">
+               <!-- arrow -->
+                <svg
+                viewBox = "0 0 24 24"
+                focusable="false"
+                class="w-[20px] h-[20px] -skew-x-[20deg]">
+              <path
+            fill= "currentColor"
+          d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
+              </div>
+            </button>
+
+                <!-- hyperlink -->
+                 <div class="flex items-center cursor-pointer group">
+                    <a href="#"
+                    class="font-display font-bold text-lightBlue300
+                    group-hover:text-grayBlue transition-all duration-200">Know More</a>
+                    <i
+                    data-feather="chevron-right"
+                    class="w-5 h-5 text-lightBlue300 group-hover:text-grayBlue transition-all duration-200"></i>
+                 </div>
+
+            </div>
+
+        </div>
+        <!-- <img src="" alt="image"
+        class="absolute max-w-[900px] right-0 bottom-20 ">  -->
+       
+
+</div>
+
+<!-- card box -->
+ <div class=" grid grid-cols-3 w-full gap-4 my-14">
+
+  <!-- box1 -->
+   <div class="border border-slate-700 w-full min-h-[15rem] relative cursor-pointer featureCard2
+   hover:scale-105 transition-all duration-200">
+    <!-- boxicon -->
+    <!-- <img src=""
+      class="bg-lightBlue absolute right-3 top-3 w-12 h-12 z-[8] transition-all duration-200"> -->
+
+      <!-- box shape -->
+
+    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      class="stroke-1 stroke-[#018597] h-full w-full absolute z-[90] featureCardSVG "
+      style="stroke-opacity: 0.15">
+      <path
+        d="m 0 6
+           a 6 6 0 0 1 6 -6
+           h 250.32501220703125
+           a 16 16 0 0 1 11 5
+           l 77 77
+           a 16 16 0 0 1 5 11
+           v 126
+           a 6 6 0 0 1 -6 6
+           h -337.32501220703125
+           a 6 6 0 0 1 -6 -6
+           z"
+        fill="#fff"></path>
+    </svg>
+       <!-- box content -->
+    <div class="bg-[#181c2e] border-slate-700 z-[1000] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 ">
+      <div >
+        <h3 class="font-display font-extrabold text-white leading-[1.2] text-[1.375rem]">Links</h3>
+        <p class="font-display text-grayText mt-6">Lorem, ipsum. Lorem, ipsum dolor.</p>
+      </div>
+      <div class="flex items-center cursor-pointer group">
+        <a href="#"
+          class="font-display font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know
+          More</a>
+        <i data-feather="chevron-right"
+          class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+      </div>
+    </div>
+  </div>
+  <!-- box2 -->
+
+  <div class="hover:scale-105 transition-all duration-200 border border-slate-700 w-full min-h-[15rem] relative cursor-pointer">
+    <img src="image/arrow2.png"
+      class="bg-lightBlue absolute right-3 top-3 w-12 h-12 z-[8] transition-all duration-200">
+
+    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG"
+      style="stroke-opacity: 0.15">
+      <path
+        d="m 0 6
+           a 6 6 0 0 1 6 -6
+           h 250.32501220703125
+           a 16 16 0 0 1 11 5
+           l 77 77
+           a 16 16 0 0 1 5 11
+           v 126
+           a 6 6 0 0 1 -6 6
+           h -337.32501220703125
+           a 6 6 0 0 1 -6 -6
+           z"
+        fill="#fff"></path>
+    </svg>
+
+    <div class="bg-[#181c2e] z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+      <div>
+        <h3 class="font-display font-extrabold text-white leading-[1.2] text-[1.375rem]">Links</h3>
+        <p class="font-display text-grayText mt-6">Lorem, ipsum. Lorem, ipsum dolor.</p>
+      </div>
+      <div class="flex items-center cursor-pointer group">
+        <a href="#"
+          class="font-display font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know
+          More</a>
+        <i data-feather="chevron-right"
+          class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- box3 -->
+
+  <div class="hover:scale-105 transition-all duration-200 border border-slate-700 w-full min-h-[15rem] relative cursor-pointer">
+    <img src="image/arrow2.png"
+      class="bg-lightBlue absolute right-3 top-3 w-12 h-12 z-[8] transition-all duration-200">
+
+    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      class="stroke-1 stroke-[#018597] h-full w-full absolute z-[90] featureCardSVG"
+      style="stroke-opacity: 0.15">
+      <path
+        d="m 0 6
+           a 6 6 0 0 1 6 -6
+           h 250.32501220703125
+           a 16 16 0 0 1 11 5
+           l 77 77
+           a 16 16 0 0 1 5 11
+           v 126
+           a 6 6 0 0 1 -6 6
+           h -337.32501220703125
+           a 6 6 0 0 1 -6 -6
+           z"
+        fill="#fff"></path>
+    </svg>
+
+    <div class="bg-[#181c2e] z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+      <div>
+        <h3 class="font-display font-extrabold text-white leading-[1.2] text-[1.375rem]">Links</h3>
+        <p class="font-display text-grayText mt-6">Lorem, ipsum. Lorem, ipsum dolor.</p>
+      </div>
+      <div class="flex items-center cursor-pointer group">
+        <a href="#"
+          class="font-display font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know
+          More</a>
+        <i data-feather="chevron-right"
+          class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+      </div>
+    </div>
+  </div>
+
+ </div>
+
+
+ <!-- demo box -->
+   <div class=" bg-[#181c2e] w-full flex flex-row items-center justify-evenly border border-slate-700 mb-24 gap-y-6 relative rounded-md p-8 ">
+    <p class="font-display text-white text-xl">Check out how to use our website
+      <span class="font-bold">No sign-up required.</span>
+    </p>
+    <button class="relative bg-lightBlue flex items-center
+    justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md
+    font-display font-bold hover:bg-lightBlue300 transition-all duration-200 cursor-pointer">Check out the Demo
+  <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex justify-center items-center">
+    <svg
+                viewBox = "0 0 24 24"
+                focusable="false"
+                class="w-[20px] h-[20px] -skew-x-[20deg]">
+              <path
+            fill= "currentColor"
+          d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
+              </div>
+  </div></button>
+    
+   </div>
+  </div>
+
+</div>
+
+     </section>
+
+     <!-- new features -->
+      <section class="bg-white relative mt-20">
+        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+          <img src="image/grid.png" alt=""
+          class="absolute w-[233px] left-[300px] -top[6rem] -z-[10]">
+          <img src="image/grid.png" alt=""
+          class="absolute w-[233px] -right-[3.5rem] -top[6rem] -z-[10]">
+
+          <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[10]">
+            <!-- item 1 -->
+             <div class="relative flex items-center -z-[100]">
+              <h2 class="font-display text-deepBlueHead font-extrabold text-4xl leading-[3.375rem]"> lorem
+                <span class="text-lightBlue300">
+              dolor sit amet
+                </span> <br>
+                 amet consectetur
+              </h2>
+             </div>
+            <!-- card 1 -->
+             <div class="p-10 bg-[url(image/freetousebgblue.png)] w-full max-h-[300px] cursor-pointer 
+             bg-no-repeat hover:scale-105 transition-all duration-200 ">
+              <img src="image/roundedArrowIcon.png" alt=""
+              class="w-10 h-10 ">
+              <h3 class="font-display text-lg font-bold pt-4">Lorem ipsum dolor </h3>
+              <p
+              class="font-display py-3 text-grayText leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <div class="flex flex-row items-center cursor-pointer group">
+              <a href=""
+              class="font-display font-bold text-lightBlue300 group-hover:text-lightBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" 
+          class="w-5 h-5 text-lightBlue300 group-hover:text-grayBlue transition-all duration-200"></i>
+              </div>
+             </div>
+              <!-- card 2 -->
+               <div class="p-10 bg-[url(image/freetousebgblue.png)] w-full max-h-[300px] cursor-pointer 
+             bg-no-repeat hover:scale-105 transition-all duration-200 ">
+              <img src="image/roundedArrowIcon.png" alt=""
+              class="w-10 h-10 ">
+              <h3 class="font-display text-lg font-bold pt-4">Lorem ipsum dolor </h3>
+              <p
+              class="font-display py-3 text-grayText leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <div class="flex flex-row items-center cursor-pointer group">
+              <a href=""
+              class="font-display font-bold text-lightBlue300 group-hover:text-lightBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" 
+          class="w-5 h-5 text-lightBlue300 group-hover:text-grayBlue transition-all duration-200"></i>
+              </div>
+             </div>
+                <!-- card 3-->
+                 <div class="p-10 bg-[url(image/freetousebgblue.png)] w-full max-h-[300px] cursor-pointer 
+             bg-no-repeat hover:scale-105 transition-all duration-200 ">
+              <img src="image/roundedArrowIcon.png" alt=""
+              class="w-10 h-10 ">
+              <h3 class="font-display text-lg font-bold pt-4">Lorem ipsum dolor </h3>
+              <p
+              class="font-display py-3 text-grayText leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <div class="flex flex-row items-center cursor-pointer group">
+              <a href=""
+              class="font-display font-bold text-lightBlue300 group-hover:text-lightBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" 
+          class="w-5 h-5 text-lightBlue300 group-hover:text-grayBlue transition-all duration-200"></i>
+              </div>
+             </div>
+          <!-- card 4 -->
+                   <div class="p-10 bg-[url(image/freetousebgblue.png)] w-full max-h-[300px] cursor-pointer 
+             bg-no-repeat hover:scale-105 transition-all duration-200 ">
+              <img src="image/roundedArrowIcon.png" alt=""
+              class="w-10 h-10 ">
+              <h3 class="font-display text-lg font-bold pt-4">Lorem ipsum dolor </h3>
+              <p
+              class="font-display py-3 text-grayText leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <div class="flex flex-row items-center cursor-pointer group">
+              <a href=""
+              class="font-display font-bold text-lightBlue300 group-hover:text-lightBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" 
+          class="w-5 h-5 text-lightBlue300 group-hover:text-grayBlue transition-all duration-200 bg-white"></i>
+              </div>
+             </div>
+
+             <!-- card 5 -->
+              <div class="p-10 bg-[url(image/freetousebgblue.png)] w-full max-h-[300px] cursor-pointer 
+             bg-no-repeat hover:scale-105 transition-all duration-200 bg-white">
+              <img src="image/roundedArrowIcon.png" alt=""
+              class="w-10 h-10 ">
+              <h3 class="font-display text-lg font-bold pt-4">Lorem ipsum dolor </h3>
+              <p
+              class="font-display py-3 text-grayText leading-normal">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <div class="flex flex-row items-center cursor-pointer group">
+              <a href=""
+              class="font-display font-bold text-lightBlue300 group-hover:text-lightBlue transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" 
+          class="w-5 h-5 text-lightBlue300 group-hover:text-grayBlue transition-all duration-200"></i>
+              </div>
+             </div>
+          </div>
+        </div>
+
+        <!-- core features -->
+
+         <section class="w-full bg-[url(image/blueBG.png)]
+         bg-no-repeat bg-cover mt-14 relative bg-center corefeaturesection">
+          <div class="relative w-11/12 max-w-[1080] mx-auto">
+            <h2 class="font-display text-white font-bold text-2xl text-center">Features</h2>
+            <div class="w-6 h-1 bg-green-400 mx-auto mt-4 mb-6"></div>
+            <p class="font-display text-center max-w-[450px] text-white mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, facilis?</p>
+
+            <!-- grid -->
+            <div class="grid grid-cols-4 gp-[2rem] mt-8">
+              <!-- card1 -->
+              <div>
+                <img src="" alt="">
+                <h3 class="font-display text-white text-lg font-bold my-4">Feature 1</h3>
+                <p class="font-display text-white opacity-80">about feature Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, rem?</p>
+              </div>
+
+              <!-- card2 -->
+              <div>
+                <img src="" alt="">
+                <h3 class="font-display text-white text-lg font-bold my-4">Feature 1</h3>
+                <p class="font-display text-white opacity-80">about feature Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, rem?</p>
+              </div>
+
+              <!-- card3 -->
+               <div>
+                <img src="" alt="">
+                <h3 class="font-display text-white text-lg font-bold my-4">Feature 1</h3>
+                <p class="font-display text-white opacity-80">about feature Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, rem?</p>
+              </div>
+
+              <!-- card4 -->
+               <div>
+                <img src="" alt="">
+                <h3 class="font-display text-white text-lg font-bold my-4">Feature 1</h3>
+                <p class="font-display text-white opacity-80">about feature Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, rem?</p>
+              </div>
+
+              <!-- card5 -->
+               <div>
+                <img src="" alt="">
+                <h3 class="font-display text-white text-lg font-bold my-4">Feature 1</h3>
+                <p class="font-display text-white opacity-80">about feature Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, rem?</p>
+              </div>
+
+              <!-- card6 -->
+               <div>
+                <img src="" alt="">
+                <h3 class="font-display text-white text-lg font-bold my-4">Feature 1</h3>
+                <p class="font-display text-white opacity-80">about feature Lorem ipsum dolor sit amet 
+                  consectetur adipisicing elit. Culpa, rem? Lorem ipsu</p>
+              </div>
+
+              <!-- card7 -->
+               <div>
+                <img src="" alt="">
+                <h3 class="font-display text-white text-lg font-bold my-4">Feature 1</h3>
+                <p class="font-display text-white opacity-80">about feature Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, rem?</p>
+              </div>
+
+              <!-- card8 -->
+               <div>
+                <img src="" alt="">
+                <h3 class="font-display text-white text-lg font-bold my-4">Feature 1</h3>
+                <p class="font-display text-white opacity-80">about feature Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, rem?</p>
+              </div>
+            </div>
+          </div>
+         </section>
+
+         <!-- join our website -->
+         
+         <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] w-full -z-[100]">
+          <div class="w-11/12 flex max-w-[1080px] mx-auto relative">
+
+            <!-- left part -->
+             <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+              <h2 class="text-display font-bold text-2xl text-deepBlueHead">Lorem ipsum dolor sit amet.</h2>
+              <div class="bg-greenLight w-6 h-1 mb-10 my-4"></div>
+              <p class="font-display opacity-80">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam vel itaque pariatur rem dolor, mollitia reprehenderit nobis obcaecati corporis accusantium distinctio nostrum officiis voluptatem nam accusamus doloribus cupiditate atque totam.
+              sapiente, odio natus beatae neque nesciunt fuga cum nisi sint facere vero ullam ad itaque vel aspernatur enim esse totam rem eligendi. Aliquam, saepe!</p>
+              <p class="font-display mt-6 opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sapiente blanditiis quasi dolorem fugit esse suscipit molestias dolor a minus. Repellendus assumenda molestiae quod reiciendis! Commodi rerum numquam rem ut?</p>
+             </div>
+                <!-- right part -->
+             <div class="h-[500px] w-[500px] relative overflow-hidden">
+              <div class="">
+
+              </div>
+              <img src="image/list.png" alt="" width="500px"
+              class="absolute h-auto object-cover list3">
+             </div>
+
+             </div>
+         </section>
+
+
+      </section>
+
+    </div>
+     
+     <script>
+        feather.replace()
+     </script>
+</body>
 </html>
