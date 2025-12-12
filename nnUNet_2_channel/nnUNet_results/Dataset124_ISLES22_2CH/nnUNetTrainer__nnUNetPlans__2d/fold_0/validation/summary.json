@@ -1,0 +1,826 @@
+{
+    "foreground_mean": {
+        "Dice": 0.7563915900103954,
+        "FN": 591.72,
+        "FP": 316.88,
+        "IoU": 0.6337072494611982,
+        "TN": 876534.2,
+        "TP": 2287.12,
+        "n_pred": 2604.0,
+        "n_ref": 2878.84
+    },
+    "mean": {
+        "1": {
+            "Dice": 0.7563915900103954,
+            "FN": 591.72,
+            "FP": 316.88,
+            "IoU": 0.6337072494611982,
+            "TN": 876534.2,
+            "TP": 2287.12,
+            "n_pred": 2604.0,
+            "n_ref": 2878.84
+        }
+    },
+    "metric_per_case": [
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.691046658259773,
+                    "FN": 147,
+                    "FP": 98,
+                    "IoU": 0.5279383429672447,
+                    "TN": 902649,
+                    "TP": 274,
+                    "n_pred": 372,
+                    "n_ref": 421
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0010.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0010.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7866666666666666,
+                    "FN": 337,
+                    "FP": 239,
+                    "IoU": 0.6483516483516484,
+                    "TN": 914074,
+                    "TP": 1062,
+                    "n_pred": 1301,
+                    "n_ref": 1399
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0011.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0011.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8125734430082256,
+                    "FN": 546,
+                    "FP": 92,
+                    "IoU": 0.6843146956952004,
+                    "TN": 913691,
+                    "TP": 1383,
+                    "n_pred": 1475,
+                    "n_ref": 1929
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0017.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0017.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8752657282390118,
+                    "FN": 955,
+                    "FP": 1216,
+                    "IoU": 0.7781977932161831,
+                    "TN": 893380,
+                    "TP": 7617,
+                    "n_pred": 8833,
+                    "n_ref": 8572
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0019.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0019.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8108651911468813,
+                    "FN": 603,
+                    "FP": 149,
+                    "IoU": 0.6818950930626058,
+                    "TN": 900804,
+                    "TP": 1612,
+                    "n_pred": 1761,
+                    "n_ref": 2215
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0021.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0021.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8881239242685026,
+                    "FN": 135,
+                    "FP": 60,
+                    "IoU": 0.7987616099071208,
+                    "TN": 902199,
+                    "TP": 774,
+                    "n_pred": 834,
+                    "n_ref": 909
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0028.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0028.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8944653318177844,
+                    "FN": 1404,
+                    "FP": 1010,
+                    "IoU": 0.8090794052515027,
+                    "TN": 903068,
+                    "TP": 10230,
+                    "n_pred": 11240,
+                    "n_ref": 11634
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0031.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0031.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7460815047021944,
+                    "FN": 36,
+                    "FP": 45,
+                    "IoU": 0.595,
+                    "TN": 915512,
+                    "TP": 119,
+                    "n_pred": 164,
+                    "n_ref": 155
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0034.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0034.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8452173913043478,
+                    "FN": 167,
+                    "FP": 11,
+                    "IoU": 0.7319277108433735,
+                    "TN": 915048,
+                    "TP": 486,
+                    "n_pred": 497,
+                    "n_ref": 653
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0041.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0041.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8468969781281397,
+                    "FN": 1396,
+                    "FP": 585,
+                    "IoU": 0.7344504021447721,
+                    "TN": 895708,
+                    "TP": 5479,
+                    "n_pred": 6064,
+                    "n_ref": 6875
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0048.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0048.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7647867950481431,
+                    "FN": 112,
+                    "FP": 59,
+                    "IoU": 0.6191536748329621,
+                    "TN": 902719,
+                    "TP": 278,
+                    "n_pred": 337,
+                    "n_ref": 390
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0051.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0051.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8247422680412371,
+                    "FN": 10,
+                    "FP": 24,
+                    "IoU": 0.7017543859649122,
+                    "TN": 915598,
+                    "TP": 80,
+                    "n_pred": 104,
+                    "n_ref": 90
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0053.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0053.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9458191816270419,
+                    "FN": 306,
+                    "FP": 29,
+                    "IoU": 0.8972077324332617,
+                    "TN": 912453,
+                    "TP": 2924,
+                    "n_pred": 2953,
+                    "n_ref": 3230
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0055.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0055.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.3567753001715266,
+                    "FN": 357,
+                    "FP": 18,
+                    "IoU": 0.21711899791231734,
+                    "TN": 902689,
+                    "TP": 104,
+                    "n_pred": 122,
+                    "n_ref": 461
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0068.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0068.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.631578947368421,
+                    "FN": 5,
+                    "FP": 9,
+                    "IoU": 0.46153846153846156,
+                    "TN": 903142,
+                    "TP": 12,
+                    "n_pred": 21,
+                    "n_ref": 17
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0069.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0069.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7002150537634408,
+                    "FN": 202,
+                    "FP": 495,
+                    "IoU": 0.5387160820648577,
+                    "TN": 901657,
+                    "TP": 814,
+                    "n_pred": 1309,
+                    "n_ref": 1016
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0072.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0072.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6010471204188481,
+                    "FN": 376,
+                    "FP": 5,
+                    "IoU": 0.4296407185628742,
+                    "TN": 915044,
+                    "TP": 287,
+                    "n_pred": 292,
+                    "n_ref": 663
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0074.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0074.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9496130696474635,
+                    "FN": 323,
+                    "FP": 263,
+                    "IoU": 0.904060248853962,
+                    "TN": 909604,
+                    "TP": 5522,
+                    "n_pred": 5785,
+                    "n_ref": 5845
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0086.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0086.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7692307692307693,
+                    "FN": 7,
+                    "FP": 14,
+                    "IoU": 0.625,
+                    "TN": 903112,
+                    "TP": 35,
+                    "n_pred": 49,
+                    "n_ref": 42
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0093.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0093.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.786308973172988,
+                    "FN": 142,
+                    "FP": 89,
+                    "IoU": 0.6478658536585366,
+                    "TN": 915056,
+                    "TP": 425,
+                    "n_pred": 514,
+                    "n_ref": 567
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0094.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0094.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9124694863747322,
+                    "FN": 486,
+                    "FP": 1271,
+                    "IoU": 0.8390288593678424,
+                    "TN": 904797,
+                    "TP": 9158,
+                    "n_pred": 10429,
+                    "n_ref": 9644
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0104.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0104.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8395570435230492,
+                    "FN": 52,
+                    "FP": 571,
+                    "IoU": 0.723479804704838,
+                    "TN": 1177395,
+                    "TP": 1630,
+                    "n_pred": 2201,
+                    "n_ref": 1682
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0105.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0105.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8237022526934378,
+                    "FN": 306,
+                    "FP": 54,
+                    "IoU": 0.7002497918401333,
+                    "TN": 914511,
+                    "TP": 841,
+                    "n_pred": 895,
+                    "n_ref": 1147
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0110.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0110.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7341772151898734,
+                    "FN": 334,
+                    "FP": 2,
+                    "IoU": 0.58,
+                    "TN": 914912,
+                    "TP": 464,
+                    "n_pred": 466,
+                    "n_ref": 798
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0118.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0118.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9288537549407114,
+                    "FN": 42,
+                    "FP": 30,
+                    "IoU": 0.8671586715867159,
+                    "TN": 915170,
+                    "TP": 470,
+                    "n_pred": 500,
+                    "n_ref": 512
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0121.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0121.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9456507773352177,
+                    "FN": 563,
+                    "FP": 706,
+                    "IoU": 0.8969047038752133,
+                    "TN": 903403,
+                    "TP": 11040,
+                    "n_pred": 11746,
+                    "n_ref": 11603
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0123.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0123.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5869565217391305,
+                    "FN": 74,
+                    "FP": 78,
+                    "IoU": 0.4153846153846154,
+                    "TN": 927996,
+                    "TP": 108,
+                    "n_pred": 186,
+                    "n_ref": 182
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0135.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0135.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.59,
+                    "FN": 163,
+                    "FP": 1,
+                    "IoU": 0.41843971631205673,
+                    "TN": 953418,
+                    "TP": 118,
+                    "n_pred": 119,
+                    "n_ref": 281
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0137.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0137.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.5266157438556219,
+                    "FN": 11018,
+                    "FP": 943,
+                    "IoU": 0.35741914687869347,
+                    "TN": 897098,
+                    "TP": 6653,
+                    "n_pred": 7596,
+                    "n_ref": 17671
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0140.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0140.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6374193548387097,
+                    "FN": 1392,
+                    "FP": 13,
+                    "IoU": 0.4678030303030303,
+                    "TN": 913072,
+                    "TP": 1235,
+                    "n_pred": 1248,
+                    "n_ref": 2627
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0146.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0146.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8297520661157025,
+                    "FN": 34,
+                    "FP": 69,
+                    "IoU": 0.7090395480225988,
+                    "TN": 915358,
+                    "TP": 251,
+                    "n_pred": 320,
+                    "n_ref": 285
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0148.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0148.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 915712,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0151.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0151.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.44415584415584414,
+                    "FN": 383,
+                    "FP": 45,
+                    "IoU": 0.2854757929883139,
+                    "TN": 902569,
+                    "TP": 171,
+                    "n_pred": 216,
+                    "n_ref": 554
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0160.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0160.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9458513828723759,
+                    "FN": 455,
+                    "FP": 195,
+                    "IoU": 0.8972656867393709,
+                    "TN": 403273,
+                    "TP": 5677,
+                    "n_pred": 5872,
+                    "n_ref": 6132
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0161.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0161.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8617743151545615,
+                    "FN": 388,
+                    "FP": 712,
+                    "IoU": 0.7571207772135129,
+                    "TN": 898639,
+                    "TP": 3429,
+                    "n_pred": 4141,
+                    "n_ref": 3817
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0168.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0168.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.3968926553672316,
+                    "FN": 1464,
+                    "FP": 244,
+                    "IoU": 0.2475770925110132,
+                    "TN": 951074,
+                    "TP": 562,
+                    "n_pred": 806,
+                    "n_ref": 2026
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0181.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0181.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.3064516129032258,
+                    "FN": 86,
+                    "FP": 0,
+                    "IoU": 0.18095238095238095,
+                    "TN": 409495,
+                    "TP": 19,
+                    "n_pred": 19,
+                    "n_ref": 105
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0182.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0182.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.6630532971996387,
+                    "FN": 351,
+                    "FP": 22,
+                    "IoU": 0.49594594594594593,
+                    "TN": 408860,
+                    "TP": 367,
+                    "n_pred": 389,
+                    "n_ref": 718
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0186.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0186.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8728606356968215,
+                    "FN": 42,
+                    "FP": 62,
+                    "IoU": 0.7744034707158352,
+                    "TN": 409139,
+                    "TP": 357,
+                    "n_pred": 419,
+                    "n_ref": 399
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0187.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0187.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.793591654247392,
+                    "FN": 531,
+                    "FP": 23,
+                    "IoU": 0.6578134651019147,
+                    "TN": 1104301,
+                    "TP": 1065,
+                    "n_pred": 1088,
+                    "n_ref": 1596
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0188.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0188.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9003690036900369,
+                    "FN": 220,
+                    "FP": 104,
+                    "IoU": 0.8187919463087249,
+                    "TN": 913924,
+                    "TP": 1464,
+                    "n_pred": 1568,
+                    "n_ref": 1684
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0196.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0196.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7955801104972375,
+                    "FN": 92,
+                    "FP": 56,
+                    "IoU": 0.6605504587155964,
+                    "TN": 409164,
+                    "TP": 288,
+                    "n_pred": 344,
+                    "n_ref": 380
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0197.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0197.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8665126367408525,
+                    "FN": 667,
+                    "FP": 4995,
+                    "IoU": 0.7644660759598985,
+                    "TN": 913653,
+                    "TP": 18377,
+                    "n_pred": 23372,
+                    "n_ref": 19044
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0201.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0201.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8417136685467419,
+                    "FN": 1101,
+                    "FP": 218,
+                    "IoU": 0.726688769167012,
+                    "TN": 898342,
+                    "TP": 3507,
+                    "n_pred": 3725,
+                    "n_ref": 4608
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0205.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0205.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.896124031007752,
+                    "FN": 408,
+                    "FP": 128,
+                    "IoU": 0.8117977528089888,
+                    "TN": 1103072,
+                    "TP": 2312,
+                    "n_pred": 2440,
+                    "n_ref": 2720
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0207.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0207.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.3389830508474576,
+                    "FN": 108,
+                    "FP": 9,
+                    "IoU": 0.20408163265306123,
+                    "TN": 903021,
+                    "TP": 30,
+                    "n_pred": 39,
+                    "n_ref": 138
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0212.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0212.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7219512195121951,
+                    "FN": 236,
+                    "FP": 106,
+                    "IoU": 0.5648854961832062,
+                    "TN": 902382,
+                    "TP": 444,
+                    "n_pred": 550,
+                    "n_ref": 680
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0220.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0220.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8116048475945649,
+                    "FN": 397,
+                    "FP": 116,
+                    "IoU": 0.6829419035846724,
+                    "TN": 901550,
+                    "TP": 1105,
+                    "n_pred": 1221,
+                    "n_ref": 1502
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0235.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0235.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8521094112192861,
+                    "FN": 204,
+                    "FP": 434,
+                    "IoU": 0.7423263327948304,
+                    "TN": 1103444,
+                    "TP": 1838,
+                    "n_pred": 2272,
+                    "n_ref": 2042
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0238.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0238.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8711340206185567,
+                    "FN": 423,
+                    "FP": 127,
+                    "IoU": 0.771689497716895,
+                    "TN": 900759,
+                    "TP": 1859,
+                    "n_pred": 1986,
+                    "n_ref": 2282
+                }
+            },
+            "prediction_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_results\\Dataset124_ISLES22_2CH\\nnUNetTrainer__nnUNetPlans__2d\\fold_0\\validation\\ISLES22_0247.nii.gz",
+            "reference_file": "D:/Capstone/Experiment 3/nnUNet_2_channel/nnUNet_preprocessed\\Dataset124_ISLES22_2CH\\gt_segmentations\\ISLES22_0247.nii.gz"
+        }
+    ]
+}

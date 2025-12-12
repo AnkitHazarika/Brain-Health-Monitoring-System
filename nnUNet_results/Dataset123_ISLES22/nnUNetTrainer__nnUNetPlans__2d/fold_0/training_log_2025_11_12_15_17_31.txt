@@ -1,0 +1,89 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+2025-11-12 15:17:32.557580: do_dummy_2d_data_aug: False 
+2025-11-12 15:17:32.563090: Using splits from existing split file: D:\Capstone\Experiment 3\nnUNet_preprocessed\Dataset123_ISLES22\splits_final.json 
+2025-11-12 15:17:32.564098: The split file contains 5 splits. 
+2025-11-12 15:17:32.564098: Desired fold for training: 0 
+2025-11-12 15:17:32.565092: This split has 200 training and 50 validation cases. 
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 266, 'patch_size': [112, 112], 'median_image_size_in_voxels': [112.0, 112.0], 'spacing': [2.0, 2.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 5, 'features_per_stage': [32, 64, 128, 256, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset123_ISLES22', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [2.0, 2.0, 2.0], 'original_median_shape_after_transp': [72, 112, 112], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 2117.0, 'mean': 374.9803381258754, 'median': 356.0013427734375, 'min': 6.620041403948562e-06, 'percentile_00_5': 89.99862670898438, 'percentile_99_5': 878.9948120117188, 'std': 156.9442956212566}, '1': {'max': 4506.12158203125, 'mean': 222.5365358402489, 'median': 0.5183995962142944, 'min': -319.0020751953125, 'percentile_00_5': 0.00027764352853409946, 'percentile_99_5': 1673.6614990234375, 'std': 375.24569493155883}, '2': {'max': 5049.42724609375, 'mean': 1166.910578771508, 'median': 1260.6309814453125, 'min': -575.469482421875, 'percentile_00_5': 71.0, 'percentile_99_5': 2330.02392578125, 'std': 570.0462245514832}}} 
+ 
+2025-11-12 15:17:57.705982: unpacking dataset... 
+2025-11-12 15:17:59.385227: unpacking done... 
+2025-11-12 15:17:59.391242: Unable to plot network architecture: 
+2025-11-12 15:17:59.391242: No module named 'hiddenlayer' 
+2025-11-12 15:17:59.456597:  
+2025-11-12 15:17:59.456597: Epoch 83 
+2025-11-12 15:17:59.456597: Current learning rate: 0.00617 
+2025-11-12 15:53:26.822738: train_loss -0.9332 
+2025-11-12 15:53:26.825262: val_loss -0.8251 
+2025-11-12 15:53:26.826285: Pseudo dice [0.8423] 
+2025-11-12 15:53:26.827282: Epoch time: 2127.37 s 
+2025-11-12 15:53:29.073341:  
+2025-11-12 15:53:29.073341: Epoch 84 
+2025-11-12 15:53:29.074344: Current learning rate: 0.00612 
+2025-11-12 16:29:19.923542: train_loss -0.9345 
+2025-11-12 16:29:19.925058: val_loss -0.8277 
+2025-11-12 16:29:19.926080: Pseudo dice [0.8444] 
+2025-11-12 16:29:19.926080: Epoch time: 2150.86 s 
+2025-11-12 16:29:21.720376:  
+2025-11-12 16:29:21.720885: Epoch 85 
+2025-11-12 16:29:21.721906: Current learning rate: 0.00608 
+2025-11-12 17:04:51.577154: train_loss -0.9339 
+2025-11-12 17:04:51.578165: val_loss -0.8226 
+2025-11-12 17:04:51.578165: Pseudo dice [0.8403] 
+2025-11-12 17:04:51.579166: Epoch time: 2129.86 s 
+2025-11-12 17:04:53.145348:  
+2025-11-12 17:04:53.145348: Epoch 86 
+2025-11-12 17:04:53.147372: Current learning rate: 0.00603 
+2025-11-12 17:39:19.803185: train_loss -0.9347 
+2025-11-12 17:39:19.804180: val_loss -0.8246 
+2025-11-12 17:39:19.804180: Pseudo dice [0.8425] 
+2025-11-12 17:39:19.805182: Epoch time: 2066.66 s 
+2025-11-12 17:39:21.362230:  
+2025-11-12 17:39:21.363230: Epoch 87 
+2025-11-12 17:39:21.364213: Current learning rate: 0.00598 
+2025-11-12 18:13:50.294260: train_loss -0.9352 
+2025-11-12 18:13:50.295257: val_loss -0.8237 
+2025-11-12 18:13:50.296257: Pseudo dice [0.842] 
+2025-11-12 18:13:50.296257: Epoch time: 2068.93 s 
+2025-11-12 18:13:51.824821:  
+2025-11-12 18:13:51.825821: Epoch 88 
+2025-11-12 18:13:51.825821: Current learning rate: 0.00593 
+2025-11-12 18:48:37.405010: train_loss -0.9354 
+2025-11-12 18:48:37.407007: val_loss -0.8266 
+2025-11-12 18:48:37.407007: Pseudo dice [0.8435] 
+2025-11-12 18:48:37.408011: Epoch time: 2085.58 s 
+2025-11-12 18:48:39.012652:  
+2025-11-12 18:48:39.012652: Epoch 89 
+2025-11-12 18:48:39.013663: Current learning rate: 0.00589 
+2025-11-12 19:23:29.733336: train_loss -0.9346 
+2025-11-12 19:23:29.733336: val_loss -0.8238 
+2025-11-12 19:23:29.733336: Pseudo dice [0.8424] 
+2025-11-12 19:23:29.734858: Epoch time: 2090.72 s 
+2025-11-12 19:23:31.103613:  
+2025-11-12 19:23:31.104641: Epoch 90 
+2025-11-12 19:23:31.104641: Current learning rate: 0.00584 
+2025-11-12 19:58:19.546202: train_loss -0.9347 
+2025-11-12 19:58:19.547553: val_loss -0.8271 
+2025-11-12 19:58:19.547553: Pseudo dice [0.8447] 
+2025-11-12 19:58:19.547553: Epoch time: 2088.44 s 
+2025-11-12 19:58:20.979547:  
+2025-11-12 19:58:20.980547: Epoch 91 
+2025-11-12 19:58:20.980547: Current learning rate: 0.00579 
+2025-11-12 20:33:03.878037: train_loss -0.9362 
+2025-11-12 20:33:03.878037: val_loss -0.8244 
+2025-11-12 20:33:03.879550: Pseudo dice [0.8425] 
+2025-11-12 20:33:03.880159: Epoch time: 2082.9 s 
+2025-11-12 20:33:06.197530:  
+2025-11-12 20:33:06.198540: Epoch 92 
+2025-11-12 20:33:06.198540: Current learning rate: 0.00574 

@@ -1,0 +1,326 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+2025-11-16 17:01:20.501065: do_dummy_2d_data_aug: False 
+2025-11-16 17:01:20.505572: Using splits from existing split file: D:\Capstone\Experiment 3\nnUNet_preprocessed\Dataset123_ISLES22\splits_final.json 
+2025-11-16 17:01:20.507583: The split file contains 5 splits. 
+2025-11-16 17:01:20.507583: Desired fold for training: 0 
+2025-11-16 17:01:20.507583: This split has 200 training and 50 validation cases. 
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 266, 'patch_size': [112, 112], 'median_image_size_in_voxels': [112.0, 112.0], 'spacing': [2.0, 2.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 5, 'features_per_stage': [32, 64, 128, 256, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset123_ISLES22', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [2.0, 2.0, 2.0], 'original_median_shape_after_transp': [72, 112, 112], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 2117.0, 'mean': 374.9803381258754, 'median': 356.0013427734375, 'min': 6.620041403948562e-06, 'percentile_00_5': 89.99862670898438, 'percentile_99_5': 878.9948120117188, 'std': 156.9442956212566}, '1': {'max': 4506.12158203125, 'mean': 222.5365358402489, 'median': 0.5183995962142944, 'min': -319.0020751953125, 'percentile_00_5': 0.00027764352853409946, 'percentile_99_5': 1673.6614990234375, 'std': 375.24569493155883}, '2': {'max': 5049.42724609375, 'mean': 1166.910578771508, 'median': 1260.6309814453125, 'min': -575.469482421875, 'percentile_00_5': 71.0, 'percentile_99_5': 2330.02392578125, 'std': 570.0462245514832}}} 
+ 
+2025-11-16 17:01:46.961498: unpacking dataset... 
+2025-11-16 17:01:48.663327: unpacking done... 
+2025-11-16 17:01:48.671915: Unable to plot network architecture: 
+2025-11-16 17:01:48.671915: No module named 'hiddenlayer' 
+2025-11-16 17:01:48.786142:  
+2025-11-16 17:01:48.786142: Epoch 172 
+2025-11-16 17:01:48.787653: Current learning rate: 0.0017 
+2025-11-16 17:38:45.259983: train_loss -0.949 
+2025-11-16 17:38:45.262998: val_loss -0.8264 
+2025-11-16 17:38:45.263998: Pseudo dice [0.8452] 
+2025-11-16 17:38:45.263998: Epoch time: 2216.47 s 
+2025-11-16 17:38:47.065410:  
+2025-11-16 17:38:47.065410: Epoch 173 
+2025-11-16 17:38:47.066414: Current learning rate: 0.00165 
+2025-11-16 18:12:47.180121: train_loss -0.9497 
+2025-11-16 18:12:47.181121: val_loss -0.8247 
+2025-11-16 18:12:47.181121: Pseudo dice [0.8424] 
+2025-11-16 18:12:47.182127: Epoch time: 2040.12 s 
+2025-11-16 18:12:49.541903:  
+2025-11-16 18:12:49.542902: Epoch 174 
+2025-11-16 18:12:49.542902: Current learning rate: 0.00159 
+2025-11-16 18:46:18.656250: train_loss -0.9498 
+2025-11-16 18:46:18.656250: val_loss -0.8227 
+2025-11-16 18:46:18.657547: Pseudo dice [0.8405] 
+2025-11-16 18:46:18.658537: Epoch time: 2009.12 s 
+2025-11-16 18:46:19.871289:  
+2025-11-16 18:46:19.871289: Epoch 175 
+2025-11-16 18:46:19.872279: Current learning rate: 0.00154 
+2025-11-16 19:20:15.067862: train_loss -0.9498 
+2025-11-16 19:20:15.068872: val_loss -0.8261 
+2025-11-16 19:20:15.068872: Pseudo dice [0.8443] 
+2025-11-16 19:20:15.068872: Epoch time: 2035.2 s 
+2025-11-16 19:20:16.298379:  
+2025-11-16 19:20:16.298379: Epoch 176 
+2025-11-16 19:20:16.299378: Current learning rate: 0.00148 
+2025-11-16 19:54:11.414946: train_loss -0.9498 
+2025-11-16 19:54:11.415945: val_loss -0.828 
+2025-11-16 19:54:11.415945: Pseudo dice [0.8464] 
+2025-11-16 19:54:11.415945: Epoch time: 2035.12 s 
+2025-11-16 19:54:12.636976:  
+2025-11-16 19:54:12.637980: Epoch 177 
+2025-11-16 19:54:12.637980: Current learning rate: 0.00143 
+2025-11-16 20:28:08.263688: train_loss -0.9503 
+2025-11-16 20:28:08.265196: val_loss -0.8169 
+2025-11-16 20:28:08.266207: Pseudo dice [0.8369] 
+2025-11-16 20:28:08.266207: Epoch time: 2035.63 s 
+2025-11-16 20:28:09.526148:  
+2025-11-16 20:28:09.526148: Epoch 178 
+2025-11-16 20:28:09.527143: Current learning rate: 0.00137 
+2025-11-16 21:10:32.174783: train_loss -0.9498 
+2025-11-16 21:10:32.175781: val_loss -0.817 
+2025-11-16 21:10:32.175781: Pseudo dice [0.8369] 
+2025-11-16 21:10:32.176782: Epoch time: 2542.65 s 
+2025-11-16 21:10:33.361128:  
+2025-11-16 21:10:33.361128: Epoch 179 
+2025-11-16 21:10:33.361128: Current learning rate: 0.00132 
+2025-11-16 21:44:17.632224: train_loss -0.9497 
+2025-11-16 21:44:17.633217: val_loss -0.8225 
+2025-11-16 21:44:17.633217: Pseudo dice [0.8407] 
+2025-11-16 21:44:17.634217: Epoch time: 2024.27 s 
+2025-11-16 21:44:18.893540:  
+2025-11-16 21:44:18.893540: Epoch 180 
+2025-11-16 21:44:18.894570: Current learning rate: 0.00126 
+2025-11-16 22:18:13.886695: train_loss -0.9506 
+2025-11-16 22:18:13.886695: val_loss -0.8283 
+2025-11-16 22:18:13.887696: Pseudo dice [0.8466] 
+2025-11-16 22:18:13.887696: Epoch time: 2034.99 s 
+2025-11-16 22:18:16.194859:  
+2025-11-16 22:18:16.194859: Epoch 181 
+2025-11-16 22:18:16.194859: Current learning rate: 0.0012 
+2025-11-16 22:52:10.116934: train_loss -0.9503 
+2025-11-16 22:52:10.117939: val_loss -0.8261 
+2025-11-16 22:52:10.117939: Pseudo dice [0.8451] 
+2025-11-16 22:52:10.117939: Epoch time: 2033.92 s 
+2025-11-16 22:52:11.330909:  
+2025-11-16 22:52:11.331923: Epoch 182 
+2025-11-16 22:52:11.331923: Current learning rate: 0.00115 
+2025-11-16 23:26:05.926462: train_loss -0.9503 
+2025-11-16 23:26:05.926968: val_loss -0.8229 
+2025-11-16 23:26:05.926968: Pseudo dice [0.8415] 
+2025-11-16 23:26:05.927985: Epoch time: 2034.6 s 
+2025-11-16 23:26:07.164554:  
+2025-11-16 23:26:07.165555: Epoch 183 
+2025-11-16 23:26:07.165555: Current learning rate: 0.00109 
+2025-11-16 23:59:48.438632: train_loss -0.9508 
+2025-11-16 23:59:48.439642: val_loss -0.8238 
+2025-11-16 23:59:48.439642: Pseudo dice [0.8437] 
+2025-11-16 23:59:48.440646: Epoch time: 2021.28 s 
+2025-11-16 23:59:49.673773:  
+2025-11-16 23:59:49.673773: Epoch 184 
+2025-11-16 23:59:49.674772: Current learning rate: 0.00103 
+2025-11-17 00:33:44.025831: train_loss -0.9509 
+2025-11-17 00:33:44.026843: val_loss -0.8205 
+2025-11-17 00:33:44.027327: Pseudo dice [0.8392] 
+2025-11-17 00:33:44.028341: Epoch time: 2034.35 s 
+2025-11-17 00:33:45.260822:  
+2025-11-17 00:33:45.260822: Epoch 185 
+2025-11-17 00:33:45.260822: Current learning rate: 0.00097 
+2025-11-17 01:07:40.060444: train_loss -0.951 
+2025-11-17 01:07:40.060444: val_loss -0.8224 
+2025-11-17 01:07:40.061444: Pseudo dice [0.8411] 
+2025-11-17 01:07:40.061444: Epoch time: 2034.8 s 
+2025-11-17 01:07:41.261030:  
+2025-11-17 01:07:41.262030: Epoch 186 
+2025-11-17 01:07:41.262030: Current learning rate: 0.00091 
+2025-11-17 01:41:35.827714: train_loss -0.9516 
+2025-11-17 01:41:35.828722: val_loss -0.8237 
+2025-11-17 01:41:35.828722: Pseudo dice [0.8431] 
+2025-11-17 01:41:35.828722: Epoch time: 2034.57 s 
+2025-11-17 01:41:37.459636:  
+2025-11-17 01:41:37.459636: Epoch 187 
+2025-11-17 01:41:37.460637: Current learning rate: 0.00085 
+2025-11-17 02:15:33.115979: train_loss -0.9512 
+2025-11-17 02:15:33.117977: val_loss -0.8276 
+2025-11-17 02:15:33.117977: Pseudo dice [0.8458] 
+2025-11-17 02:15:33.117977: Epoch time: 2035.66 s 
+2025-11-17 02:15:34.296985:  
+2025-11-17 02:15:34.296985: Epoch 188 
+2025-11-17 02:15:34.297986: Current learning rate: 0.00079 
+2025-11-17 02:49:29.320948: train_loss -0.9514 
+2025-11-17 02:49:29.321953: val_loss -0.8284 
+2025-11-17 02:49:29.321953: Pseudo dice [0.8469] 
+2025-11-17 02:49:29.321953: Epoch time: 2035.02 s 
+2025-11-17 02:49:30.618847:  
+2025-11-17 02:49:30.619844: Epoch 189 
+2025-11-17 02:49:30.619844: Current learning rate: 0.00074 
+2025-11-17 03:23:24.757564: train_loss -0.9515 
+2025-11-17 03:23:24.758568: val_loss -0.8213 
+2025-11-17 03:23:24.758568: Pseudo dice [0.8407] 
+2025-11-17 03:23:24.759563: Epoch time: 2034.14 s 
+2025-11-17 03:23:26.082740:  
+2025-11-17 03:23:26.083730: Epoch 190 
+2025-11-17 03:23:26.083730: Current learning rate: 0.00067 
+2025-11-17 03:57:20.974167: train_loss -0.9515 
+2025-11-17 03:57:20.975163: val_loss -0.8233 
+2025-11-17 03:57:20.975163: Pseudo dice [0.8419] 
+2025-11-17 03:57:20.976694: Epoch time: 2034.89 s 
+2025-11-17 03:57:22.199686:  
+2025-11-17 03:57:22.200679: Epoch 191 
+2025-11-17 03:57:22.200679: Current learning rate: 0.00061 
+2025-11-17 04:31:16.789304: train_loss -0.9516 
+2025-11-17 04:31:16.790310: val_loss -0.8211 
+2025-11-17 04:31:16.791301: Pseudo dice [0.8393] 
+2025-11-17 04:31:16.791301: Epoch time: 2034.59 s 
+2025-11-17 04:31:17.977100:  
+2025-11-17 04:31:17.977100: Epoch 192 
+2025-11-17 04:31:17.978111: Current learning rate: 0.00055 
+2025-11-17 05:05:12.846967: train_loss -0.9516 
+2025-11-17 05:05:12.847960: val_loss -0.8253 
+2025-11-17 05:05:12.847960: Pseudo dice [0.843] 
+2025-11-17 05:05:12.848966: Epoch time: 2034.87 s 
+2025-11-17 05:05:14.433787:  
+2025-11-17 05:05:14.433787: Epoch 193 
+2025-11-17 05:05:14.433787: Current learning rate: 0.00049 
+2025-11-17 05:39:10.420198: train_loss -0.9514 
+2025-11-17 05:39:10.421197: val_loss -0.828 
+2025-11-17 05:39:10.421197: Pseudo dice [0.8457] 
+2025-11-17 05:39:10.422199: Epoch time: 2035.99 s 
+2025-11-17 05:39:11.610860:  
+2025-11-17 05:39:11.611858: Epoch 194 
+2025-11-17 05:39:11.611858: Current learning rate: 0.00043 
+2025-11-17 06:13:08.039904: train_loss -0.9521 
+2025-11-17 06:13:08.039904: val_loss -0.825 
+2025-11-17 06:13:08.041408: Pseudo dice [0.8436] 
+2025-11-17 06:13:08.041408: Epoch time: 2036.43 s 
+2025-11-17 06:13:09.321732:  
+2025-11-17 06:13:09.321732: Epoch 195 
+2025-11-17 06:13:09.323066: Current learning rate: 0.00036 
+2025-11-17 06:47:05.280941: train_loss -0.9528 
+2025-11-17 06:47:05.282137: val_loss -0.8223 
+2025-11-17 06:47:05.283138: Pseudo dice [0.8414] 
+2025-11-17 06:47:05.283138: Epoch time: 2035.96 s 
+2025-11-17 06:47:06.566173:  
+2025-11-17 06:47:06.566173: Epoch 196 
+2025-11-17 06:47:06.566173: Current learning rate: 0.0003 
+2025-11-17 07:21:02.771092: train_loss -0.9521 
+2025-11-17 07:21:02.772094: val_loss -0.8213 
+2025-11-17 07:21:02.773095: Pseudo dice [0.8407] 
+2025-11-17 07:21:02.773095: Epoch time: 2036.21 s 
+2025-11-17 07:21:04.005152:  
+2025-11-17 07:21:04.006170: Epoch 197 
+2025-11-17 07:21:04.006170: Current learning rate: 0.00023 
+2025-11-17 07:55:01.069512: train_loss -0.9525 
+2025-11-17 07:55:01.070521: val_loss -0.8277 
+2025-11-17 07:55:01.070521: Pseudo dice [0.8453] 
+2025-11-17 07:55:01.072049: Epoch time: 2037.07 s 
+2025-11-17 07:55:02.289193:  
+2025-11-17 07:55:02.289193: Epoch 198 
+2025-11-17 07:55:02.290214: Current learning rate: 0.00016 
+2025-11-17 08:28:59.217565: train_loss -0.9521 
+2025-11-17 08:28:59.218564: val_loss -0.8275 
+2025-11-17 08:28:59.218564: Pseudo dice [0.8461] 
+2025-11-17 08:28:59.218564: Epoch time: 2036.93 s 
+2025-11-17 08:29:00.466663:  
+2025-11-17 08:29:00.468171: Epoch 199 
+2025-11-17 08:29:00.468171: Current learning rate: 8e-05 
+2025-11-17 09:02:57.686465: train_loss -0.9535 
+2025-11-17 09:02:57.687470: val_loss -0.8216 
+2025-11-17 09:02:57.687470: Pseudo dice [0.8404] 
+2025-11-17 09:02:57.688473: Epoch time: 2037.22 s 
+2025-11-17 09:02:59.543812: Training done. 
+2025-11-17 09:02:59.677560: Using splits from existing split file: D:\Capstone\Experiment 3\nnUNet_preprocessed\Dataset123_ISLES22\splits_final.json 
+2025-11-17 09:02:59.681120: The split file contains 5 splits. 
+2025-11-17 09:02:59.682117: Desired fold for training: 0 
+2025-11-17 09:02:59.682117: This split has 200 training and 50 validation cases. 
+2025-11-17 09:02:59.684123: predicting ISLES22_0010 
+2025-11-17 09:02:59.694650: ISLES22_0010, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:03:04.639337: predicting ISLES22_0011 
+2025-11-17 09:03:04.645087: ISLES22_0011, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:03:07.436742: predicting ISLES22_0017 
+2025-11-17 09:03:07.442750: ISLES22_0017, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:03:11.411203: predicting ISLES22_0019 
+2025-11-17 09:03:11.419250: ISLES22_0019, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:03:15.744677: predicting ISLES22_0021 
+2025-11-17 09:03:15.750680: ISLES22_0021, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:03:20.817566: predicting ISLES22_0028 
+2025-11-17 09:03:20.824091: ISLES22_0028, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:03:24.738279: predicting ISLES22_0031 
+2025-11-17 09:03:24.744285: ISLES22_0031, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:03:28.818356: predicting ISLES22_0034 
+2025-11-17 09:03:28.824593: ISLES22_0034, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:03:32.933705: predicting ISLES22_0041 
+2025-11-17 09:03:32.940236: ISLES22_0041, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:03:37.251129: predicting ISLES22_0048 
+2025-11-17 09:03:37.258787: ISLES22_0048, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:03:40.641802: predicting ISLES22_0051 
+2025-11-17 09:03:40.647801: ISLES22_0051, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:03:43.322929: predicting ISLES22_0053 
+2025-11-17 09:03:43.328960: ISLES22_0053, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:03:45.584387: predicting ISLES22_0055 
+2025-11-17 09:03:45.590933: ISLES22_0055, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:03:48.391636: predicting ISLES22_0068 
+2025-11-17 09:03:48.398200: ISLES22_0068, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:03:51.030029: predicting ISLES22_0069 
+2025-11-17 09:03:51.036029: ISLES22_0069, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:03:53.410616: predicting ISLES22_0072 
+2025-11-17 09:03:53.415623: ISLES22_0072, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:03:55.608592: predicting ISLES22_0074 
+2025-11-17 09:03:55.615083: ISLES22_0074, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:03:57.984128: predicting ISLES22_0086 
+2025-11-17 09:03:57.990647: ISLES22_0086, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:00.267137: predicting ISLES22_0093 
+2025-11-17 09:04:00.274125: ISLES22_0093, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:04:02.585769: predicting ISLES22_0094 
+2025-11-17 09:04:02.590767: ISLES22_0094, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:04.897377: predicting ISLES22_0104 
+2025-11-17 09:04:04.903368: ISLES22_0104, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:07.403022: predicting ISLES22_0105 
+2025-11-17 09:04:07.407056: ISLES22_0105, shape torch.Size([3, 72, 128, 128]), rank 0 
+2025-11-17 09:04:15.854271: predicting ISLES22_0110 
+2025-11-17 09:04:15.860834: ISLES22_0110, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:18.144410: predicting ISLES22_0118 
+2025-11-17 09:04:18.150444: ISLES22_0118, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:20.405742: predicting ISLES22_0121 
+2025-11-17 09:04:20.411737: ISLES22_0121, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:22.724216: predicting ISLES22_0123 
+2025-11-17 09:04:22.730657: ISLES22_0123, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:24.979613: predicting ISLES22_0135 
+2025-11-17 09:04:24.985691: ISLES22_0135, shape torch.Size([3, 74, 112, 112]), rank 0 
+2025-11-17 09:04:27.347486: predicting ISLES22_0137 
+2025-11-17 09:04:27.353507: ISLES22_0137, shape torch.Size([3, 33, 115, 115]), rank 0 
+2025-11-17 09:04:31.288508: predicting ISLES22_0140 
+2025-11-17 09:04:31.292521: ISLES22_0140, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:33.674939: predicting ISLES22_0146 
+2025-11-17 09:04:33.680986: ISLES22_0146, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:36.003238: predicting ISLES22_0148 
+2025-11-17 09:04:36.008737: ISLES22_0148, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:38.387701: predicting ISLES22_0151 
+2025-11-17 09:04:38.395015: ISLES22_0151, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:04:40.660525: predicting ISLES22_0160 
+2025-11-17 09:04:40.665535: ISLES22_0160, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:04:42.935636: predicting ISLES22_0161 
+2025-11-17 09:04:42.942158: ISLES22_0161, shape torch.Size([3, 25, 115, 115]), rank 0 
+2025-11-17 09:04:45.944739: predicting ISLES22_0168 
+2025-11-17 09:04:45.947740: ISLES22_0168, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:04:48.210220: predicting ISLES22_0181 
+2025-11-17 09:04:48.216744: ISLES22_0181, shape torch.Size([3, 76, 112, 112]), rank 0 
+2025-11-17 09:04:50.671913: predicting ISLES22_0182 
+2025-11-17 09:04:50.678464: ISLES22_0182, shape torch.Size([3, 25, 115, 115]), rank 0 
+2025-11-17 09:04:53.703174: predicting ISLES22_0186 
+2025-11-17 09:04:53.707722: ISLES22_0186, shape torch.Size([3, 25, 115, 115]), rank 0 
+2025-11-17 09:04:56.870864: predicting ISLES22_0187 
+2025-11-17 09:04:56.873898: ISLES22_0187, shape torch.Size([3, 25, 115, 115]), rank 0 
+2025-11-17 09:05:00.019725: predicting ISLES22_0188 
+2025-11-17 09:05:00.023245: ISLES22_0188, shape torch.Size([3, 30, 110, 110]), rank 0 
+2025-11-17 09:05:01.071910: predicting ISLES22_0196 
+2025-11-17 09:05:01.075446: ISLES22_0196, shape torch.Size([3, 73, 112, 112]), rank 0 
+2025-11-17 09:05:03.446286: predicting ISLES22_0197 
+2025-11-17 09:05:03.452290: ISLES22_0197, shape torch.Size([3, 25, 115, 115]), rank 0 
+2025-11-17 09:05:06.571162: predicting ISLES22_0201 
+2025-11-17 09:05:06.575682: ISLES22_0201, shape torch.Size([3, 63, 120, 120]), rank 0 
+2025-11-17 09:05:14.204160: predicting ISLES22_0205 
+2025-11-17 09:05:14.208738: ISLES22_0205, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:05:16.572144: predicting ISLES22_0207 
+2025-11-17 09:05:16.579677: ISLES22_0207, shape torch.Size([3, 30, 110, 110]), rank 0 
+2025-11-17 09:05:17.567918: predicting ISLES22_0212 
+2025-11-17 09:05:17.571933: ISLES22_0212, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:05:19.912742: predicting ISLES22_0220 
+2025-11-17 09:05:19.919605: ISLES22_0220, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:05:22.245702: predicting ISLES22_0235 
+2025-11-17 09:05:22.252052: ISLES22_0235, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:05:24.476362: predicting ISLES22_0238 
+2025-11-17 09:05:24.481930: ISLES22_0238, shape torch.Size([3, 30, 110, 110]), rank 0 
+2025-11-17 09:05:25.508785: predicting ISLES22_0247 
+2025-11-17 09:05:25.512313: ISLES22_0247, shape torch.Size([3, 72, 112, 112]), rank 0 
+2025-11-17 09:05:37.781881: Validation complete 
+2025-11-17 09:05:37.781881: Mean Validation Dice:  0.7500859527762844 
