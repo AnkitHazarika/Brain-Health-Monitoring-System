@@ -213,3 +213,4 @@ conda activate nnunet-gpu
 ```
 
 | ⚠️ **Important:** *Do not manually install or upgrade packages after this step, as it may break binary compatibility with nnU-Net.* |
+|---------------------------------|
