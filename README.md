@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" width="120"/>
+  <img src="assets/logo.png" width="100%"/>
 </p>
 
 <h1 align="center">StrokeSegNet</h1>
