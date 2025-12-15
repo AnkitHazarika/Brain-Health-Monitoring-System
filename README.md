@@ -88,9 +88,7 @@ We use **nnU-Net v2**, a self-configuring medical image segmentation framework, 
 ## 🩻 MRI Modalities Explained
 
 <p align="center">
-  <img src="assets/dwi.png" width="250"/>
-  <img src="assets/adc.png" width="250"/>
-  <img src="assets/flair.png" width="250"/>
+  <img src="assets/MRI_preview.jpg" width="580"/>
 </p>
 
 | Modality | What it Shows | Role |
@@ -144,9 +142,6 @@ All other variables were kept identical.
 
 ## 📈 Results
 
-<p align="center">
-  <img src="assets/results.png" width="700"/>
-</p>
 
 | Metric | Bimodal (DWI+ADC) | Trimodal |
 |------|------------------|---------|
