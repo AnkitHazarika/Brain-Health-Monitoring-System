@@ -169,11 +169,47 @@ All other variables were kept identical.
 
 ---
 
-## ⚙ Installation
+## ⚙️ Installation & Environment Setup
+
+This project uses a **fully reproducible Conda environment** configured for **GPU-accelerated nnU-Net v2 training**.  
+All package versions (NumPy, PyTorch, nnU-Net, and compiled dependencies) are pinned to ensure **consistent and repeatable results** across systems.
+
+---
+
+### 🔧 Prerequisites
+- **Operating System:** Windows or Linux  
+- **Package Manager:** Anaconda or Miniconda  
+- **Hardware:** NVIDIA GPU (CUDA-capable)  
+- **Drivers:** Updated NVIDIA driver (CUDA ≥ 12.x supported)
+
+---
+
+### 📦 Step 1: Clone the Repository
 
 ```bash
-conda create -n nnunet-gpu python=3.10
+git clone https://github.com/AnkitHazarika/Brain-Health-Monitoring-System.git
+cd Brain-Health-Monitoring-System
+```
+
+### 📦 Step 2: Create Conda Environment from YAML
+
+The provided nnunet_gpu.yml file contains the exact working environment used in our experiments, including:
+
+- CUDA-enabled PyTorch
+- nnU-Net v2
+- Binary-compatible NumPy
+- Medical imaging dependencies (SimpleITK, nibabel, etc.)
+
+Create the environment using:
+
+```bash
+conda env create -f nnunet_gpu.yml
+```
+
+Activate the environment:
+
+```bash
 conda activate nnunet-gpu
-pip install numpy==1.26.4
-pip install nnunetv2
-pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+```
+
+| ⚠️ **Important:** *Do not manually install or upgrade packages after this step, as it may break binary compatibility with nnU-Net.* |
