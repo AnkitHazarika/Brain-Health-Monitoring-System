@@ -10,7 +10,7 @@ SOURCE_DATASET = r"D:\datasets\ISLES-2022"
 TARGET_REPO = os.getcwd()
 TARGET_DATASET_FOLDER = os.path.join(TARGET_REPO, "Datasets")
 
-START_DATE = datetime(2025, 8, 14)
+START_DATE = datetime(2025, 9, 28)
 END_DATE = datetime(2025, 12, 23)
 
 COMMITS = 180
@@ -71,46 +71,103 @@ random.shuffle(files)
 idx = load_progress()
 
 messages = [
-    "add stroke case data",
-    "update FLAIR scans",
-    "add DWI images",
-    "dataset preprocessing",
-    "add ADC maps",
-    "update patient samples"
+    "Space Station: minor orbit correction applied",
+    "Command Center: telemetry drift patched",
+    "Astronaut Vega: adjusting solar alignment",
+    "Orbital Control: trajectory recalculated",
+    "Space Station: stabilizing rotation axis",
+    "Commander Orion: signal interference resolved",
+    "Ground Control: communication channel secured",
+    "Astronaut Nova: sensor calibration updated",
+    "Mission Control: propulsion timing refined",
+    "Space Station: docking path realigned",
+
+    "Commander Atlas: thruster output balanced",
+    "Orbital Control: navigation vectors updated",
+    "Astronaut Lyra: thermal system stabilized",
+    "Ground Control: telemetry sync restored",
+    "Space Station: power grid stabilized",
+    "Commander Vega: minor drift corrected",
+    "Astronaut Orion: guidance system tuned",
+    "Mission Control: signal clarity improved",
+    "Space Station: module alignment fixed",
+    "Ground Control: relay inconsistencies patched",
+
+    "Astronaut Nova: onboard systems recalibrated",
+    "Commander Atlas: fuel flow adjusted",
+    "Orbital Control: orbit decay compensated",
+    "Space Station: subsystem sync corrected",
+    "Mission Control: latency issues resolved",
+    "Astronaut Lyra: data relay stabilized",
+    "Ground Control: control loop optimized",
+    "Commander Orion: navigation glitch fixed",
+    "Space Station: structural stress normalized",
+    "Orbital Control: trajectory drift minimized",
+
+    "Astronaut Vega: sensor offsets corrected",
+    "Mission Control: diagnostics updated",
+    "Space Station: timing systems adjusted",
+    "Commander Nova: propulsion inconsistency fixed",
+    "Ground Control: communication latency reduced",
+    "Astronaut Atlas: system thresholds updated",
+    "Orbital Control: orbital sync restored",
+    "Space Station: energy distribution balanced",
+    "Mission Control: telemetry accuracy improved",
+    "Commander Lyra: synchronization delay resolved"
 ]
 
 result = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
 
 
-for i in range(COMMITS):
-    n = random.randint(*FILES_PER_COMMIT)
-    date = random_date()
+commit_count = 0
 
-    for _ in range(n):
-        if idx >= len(files):
+while commit_count < COMMITS:
+    # pick a random day
+    base_date = START_DATE + timedelta(days=random.randint(0, (END_DATE - START_DATE).days))
+
+    # random number of commits that day (max 6)
+    commits_today = random.randint(1, 6)
+
+    for _ in range(commits_today):
+        if commit_count >= COMMITS or idx >= len(files):
             break
-        src, rel = files[idx]
-        copy_file(src, rel)
-        idx += 1
 
-    result = subprocess.run(
-        ["git", "status", "--porcelain"],
-        capture_output=True,
-        text=True
-    )
+        # random time for each commit
+        date = base_date.replace(
+            hour=random.randint(10, 22),
+            minute=random.randint(0, 59),
+            second=random.randint(0, 59)
+        )
 
-    if result.stdout.strip() == "":
-        print("Nothing to commit, skipping...")
-        continue
+        # random files per commit
+        n = random.randint(*FILES_PER_COMMIT)
 
-    # ✅ Only commit if there are changes
-    commit(date, random.choice(messages))
+        for _ in range(n):
+            if idx >= len(files):
+                break
+            src, rel = files[idx]
+            copy_file(src, rel)
+            idx += 1
+            save_progress(idx)
 
-    if i % PUSH_INTERVAL == 0 and i != 0:
-        subprocess.run(["git", "push", "origin", "main"])
+        # check if anything to commit
+        result = subprocess.run(
+            ["git", "status", "--porcelain"],
+            capture_output=True,
+            text=True
+        )
 
-    if idx >= len(files):
-        break
+        if result.stdout.strip() == "":
+            print("Nothing to commit, skipping...")
+            continue
+
+        # commit with random message
+        commit(date, random.choice(messages))
+        commit_count += 1
+
+        # push periodically
+        if commit_count % PUSH_INTERVAL == 0:
+            subprocess.run(["git", "push", "origin", "main"])
 
 # final push
 subprocess.run(["git", "push", "origin", "main"])
