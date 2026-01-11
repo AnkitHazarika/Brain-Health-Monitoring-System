@@ -10,8 +10,8 @@ SOURCE_DATASET = r"D:\datasets\ISLES-2022"
 TARGET_REPO = os.getcwd()
 TARGET_DATASET_FOLDER = os.path.join(TARGET_REPO, "Datasets")
 
-START_DATE = datetime(2025, 9, 28)
-END_DATE = datetime(2025, 12, 23)
+START_DATE = datetime(2026, 1, 11)
+END_DATE = datetime(2025, 3, 23)
 
 COMMITS = 180
 FILES_PER_COMMIT = (3, 8)
@@ -122,8 +122,8 @@ result = subprocess.run(["git", "status", "--porcelain"], capture_output=True, t
 commit_count = 0
 
 while commit_count < COMMITS:
-    # pick a random day
-    base_date = START_DATE + timedelta(days=random.randint(0, (END_DATE - START_DATE).days))
+    
+    base_date = START_DATE + timedelta(days=commit_count % ((END_DATE - START_DATE).days + 1))
 
     # random number of commits that day (max 6)
     commits_today = random.randint(1, 6)
