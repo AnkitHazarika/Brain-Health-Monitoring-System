@@ -1,3 +1,4 @@
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 <p align="center">
   <img src="assets/logo.png" width="100%"/>
 </p>
@@ -247,3 +248,11 @@ conda activate nnunet-gpu
 
 | ⚠️ **Important:** *Do not manually install or upgrade packages after this step, as it may break binary compatibility with nnU-Net.* |
 |---------------------------------|
+
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
