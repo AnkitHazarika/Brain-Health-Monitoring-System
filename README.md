@@ -57,6 +57,24 @@ This work has been officially published in an IEEE conference.
 🔗 [Read the Paper (IEEE Xplore)](https://ieeexplore.ieee.org/abstract/document/11315525)
 
 
+## 📚 Citation
+
+If you use this work, please cite:
+
+```bibtex
+@INPROCEEDINGS{11315525,
+  author={Prajapati, Saransh and Jayapal, Manikandan and Hazarika, Ankit and Kulshrestha, Utkarsh and Bisht, Aditi and Raj, Akshat},
+  booktitle={2025 6th International Conference on IoT Based Control Networks and Intelligent Systems (ICICNIS)}, 
+  title={Optimizing Acute Ischemic Stroke Segmentation: An Evaluation Study of Bi-Modal and Tri-Modal MRI Fusion using nnU-Net}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1605-1610},
+  keywords={Deep learning;Training;Image segmentation;Adaptation models;Sensitivity;Accuracy;Magnetic resonance imaging;Artificial neural networks;Lesions;Reliability;Ischemic Stroke;Lesion Segmentation;Deep Learning;nnU-Net;Medical Image Segmentation;Diffusion-Weighted Imaging (DWI);Apparent Diffusion Coefficient (ADC);ISLES 2022;Magnetic Resonance Imaging (MRI)},
+  doi={10.1109/ICICNIS66685.2025.11315525}}
+```
+
+
 ## 🧩 Overview
 
 **StrokeSegNet** is a deep-learning system designed to automatically segment **acute ischemic stroke lesions** from brain MRI scans using **diffusion-based imaging**.
