@@ -18,7 +18,19 @@ FILES_PER_COMMIT = (3, 8)
 
 PUSH_INTERVAL = 10
 
+PROGRESS_FILE = "progress.txt"
+
 # ==================
+
+def load_progress():
+    if os.path.exists(PROGRESS_FILE):
+        with open(PROGRESS_FILE, "r") as f:
+            return int(f.read().strip())
+    return 0
+
+def save_progress(idx):
+    with open(PROGRESS_FILE, "w") as f:
+        f.write(str(idx))
 
 def get_all_files():
     file_list = []
@@ -56,7 +68,7 @@ def commit(date, msg):
 files = get_all_files()
 random.shuffle(files)
 
-idx = 0
+idx = load_progress()
 
 messages = [
     "add stroke case data",
@@ -66,6 +78,9 @@ messages = [
     "add ADC maps",
     "update patient samples"
 ]
+
+result = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+
 
 for i in range(COMMITS):
     n = random.randint(*FILES_PER_COMMIT)
@@ -78,6 +93,17 @@ for i in range(COMMITS):
         copy_file(src, rel)
         idx += 1
 
+    result = subprocess.run(
+        ["git", "status", "--porcelain"],
+        capture_output=True,
+        text=True
+    )
+
+    if result.stdout.strip() == "":
+        print("Nothing to commit, skipping...")
+        continue
+
+    # ✅ Only commit if there are changes
     commit(date, random.choice(messages))
 
     if i % PUSH_INTERVAL == 0 and i != 0:
